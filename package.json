@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "play": "node play.js",
+    "lint:js": "eslint '**/*.js'",
+    "lint:prettier": "prettier --list-different '**/*.js'"
+  },
+  "dependencies": {
+    "canvas": "^2.0.0-alpha.11",
+    "wavefile": "^1.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "prettier": "^1.11.1",
+    "speaker": "^0.4.0",
+    "wav": "^1.0.1"
+  }
+}
