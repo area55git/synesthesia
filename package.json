@@ -1,14 +1,15 @@
 {
   "scripts": {
-    "start": "node index.js",
-    "play": "node play.js",
     "test": "jest",
     "lint:js": "eslint '**/*.js'",
     "lint:prettier": "prettier --list-different '**/*.js'"
   },
   "dependencies": {
-    "canvas": "^2.0.0-alpha.11",
-    "wavefile": "^1.0.4"
+    "get-pixels": "^3.3.0",
+    "save-pixels": "^2.3.4",
+    "stream-to-promise": "^2.2.0",
+    "wavefile": "^1.0.4",
+    "zeros": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^4.19.0",
@@ -16,8 +17,6 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.9.0",
     "jest": "^22.4.2",
-    "prettier": "^1.11.1",
-    "speaker": "^0.4.0",
-    "wav": "^1.0.1"
+    "prettier": "^1.11.1"
   }
 }
