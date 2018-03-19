@@ -2,6 +2,10 @@
 
 > convert images to audio
 
+## Dependencies
+
+https://github.com/Automattic/node-canvas#compiling
+
 ## Credits
 
 [Alex Adam](https://github.com/alexadam/img-encode)
