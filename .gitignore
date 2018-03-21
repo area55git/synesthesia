@@ -1,6 +1,7 @@
 /node_modules
-/dist
-/images
 
 # macOS system files
 .DS_Store
+
+# Test build results
+test/fixtures/*/output
