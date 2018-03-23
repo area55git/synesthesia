@@ -10,7 +10,7 @@
 
 ## API
 
-### toWav(image, [opts])
+### toWav(image, [options])
 
 Returns a `Promise<Buffer>` for a 24-bit, mono `.wav` file.
 
@@ -38,7 +38,7 @@ Default: `44100`
 
 The sample rate of the output `.wav`.
 
-### toImage(sound, [opts])
+### toImage(sound, [options])
 
 Returns a `Promise<Buffer>` for a 24-bit `.jpg` file.
 
