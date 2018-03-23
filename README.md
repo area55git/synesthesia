@@ -1,8 +1,10 @@
 # toepler
 
+[![npm version][version-badge]][version-url]
 [![build status][build-badge]][build-url]
 [![coverage status][coverage-badge]][coverage-url]
 [![greenkeeper][greenkeeper-badge]][greenkeeper-url]
+[![downloads][downloads-badge]][downloads-url]
 
 > convert images to audio and vice versa
 
@@ -37,3 +39,7 @@ Returns a `Promise<Buffer>` for a 24-bit `.jpg` file.
 [greenkeeper-url]: https://greenkeeper.io/
 [coverage-badge]: https://coveralls.io/repos/github/ismay/toepler/badge.svg?branch=master
 [coverage-url]: https://coveralls.io/github/ismay/toepler?branch=master
+[downloads-badge]: https://img.shields.io/npm/dm/toepler.svg
+[downloads-url]: https://www.npmjs.com/package/toepler
+[version-badge]: https://img.shields.io/npm/v/toepler.svg
+[version-url]: https://www.npmjs.com/package/toepler
