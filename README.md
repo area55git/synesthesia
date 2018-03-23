@@ -1,5 +1,9 @@
 # image-to-audio
 
+[![build status][build-badge]][build-url]
+[![coverage status][coverage-badge]][coverage-url]
+[![greenkeeper][greenkeeper-badge]][greenkeeper-url]
+
 > convert images to audio and vice versa
 
 ## Usage
@@ -65,3 +69,10 @@ The type of image to output. Can be `'png'` or `'jpeg'`
 ## License
 
 [MIT](http://ismay.mit-license.org/)
+
+[build-badge]: https://travis-ci.org/ismay/image-to-audio.svg?branch=master
+[build-url]: https://travis-ci.org/ismay/image-to-audio
+[greenkeeper-badge]: https://badges.greenkeeper.io/ismay/image-to-audio.svg
+[greenkeeper-url]: https://greenkeeper.io/
+[coverage-badge]: https://coveralls.io/repos/github/ismay/image-to-audio/badge.svg?branch=master
+[coverage-url]: https://coveralls.io/github/ismay/image-to-audio?branch=master
