@@ -12,7 +12,7 @@
 
 Returns a `Promise<Buffer>` for a 24-bit, mono `.wav` file.
 
-* `image`: Type: `Buffer`. Expects the `Buffer` to be a `.jpg` image by default. Can be changed by setting `options.type`.
+* `image`: Type: `Buffer`. Expects the `Buffer` to be a `.jpg` image by default (can be changed by setting `options.inputType`).
 * `options`: Type: `Object`
   * `inputType`: Type: `string`. Default: `'image/jpeg'`. MIME type of the input image buffer. Only `'image/png'` and `'image/jpeg'` are supported. Any `.png` transparency information will be discarded.
   * `sampleRate`: Type: `number`. Default: `44100`. The sample rate of the output `.wav`.
