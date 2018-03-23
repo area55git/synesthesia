@@ -1,4 +1,4 @@
-# image-to-audio
+# toepler
 
 [![build status][build-badge]][build-url]
 [![coverage status][coverage-badge]][coverage-url]
@@ -31,9 +31,9 @@ Returns a `Promise<Buffer>` for a 24-bit `.jpg` file.
 
 [MIT](http://ismay.mit-license.org/)
 
-[build-badge]: https://travis-ci.org/ismay/image-to-audio.svg?branch=master
-[build-url]: https://travis-ci.org/ismay/image-to-audio
-[greenkeeper-badge]: https://badges.greenkeeper.io/ismay/image-to-audio.svg
+[build-badge]: https://travis-ci.org/ismay/toepler.svg?branch=master
+[build-url]: https://travis-ci.org/ismay/toepler
+[greenkeeper-badge]: https://badges.greenkeeper.io/ismay/toepler.svg
 [greenkeeper-url]: https://greenkeeper.io/
-[coverage-badge]: https://coveralls.io/repos/github/ismay/image-to-audio/badge.svg?branch=master
-[coverage-url]: https://coveralls.io/github/ismay/image-to-audio?branch=master
+[coverage-badge]: https://coveralls.io/repos/github/ismay/toepler/badge.svg?branch=master
+[coverage-url]: https://coveralls.io/github/ismay/toepler?branch=master
