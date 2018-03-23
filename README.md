@@ -8,6 +8,36 @@
 
 > convert images to audio and vice versa
 
+## Usage
+
+#### Audio to image
+
+```javascript
+const fs = require('fs');
+const path = require('path');
+const { toImage } = require('toepler');
+
+const wavBuffer = fs.readFileSync(path.join(__dirname, 'input.wav'));
+
+toImage(wavBuffer).then(imageBuffer => {
+  fs.writeFileSync(path.join(__dirname, 'output.jpg'), imageBuffer);
+});
+```
+
+#### Image to audio
+
+```javascript
+const fs = require('fs');
+const path = require('path');
+const { toWav } = require('toepler');
+
+const imageBuffer = fs.readFileSync(path.join(__dirname, 'input.jpg'));
+
+toWav(imageBuffer).then(wavBuffer => {
+  fs.writeFileSync(path.join(__dirname, 'output.wav'), wavBuffer);
+});
+```
+
 ## API
 
 ### toWav(image, [options])
