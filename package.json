@@ -2,7 +2,8 @@
   "scripts": {
     "test": "jest",
     "lint:js": "eslint '**/*.js'",
-    "lint:prettier": "prettier --list-different '**/*.js'"
+    "lint:prettier": "prettier --list-different '**/*.js'",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "get-pixels": "^3.3.0",
@@ -16,7 +17,9 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.9.0",
+    "husky": "^0.14.3",
     "jest": "^22.4.2",
+    "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",
     "rimraf": "^2.6.2"
   }
