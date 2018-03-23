@@ -25,7 +25,7 @@ Returns a `Promise<Buffer>` for a 24-bit `.jpg` file.
 * `options`: Type: `Object`
   * `width`: Type: `number`. Minimum: `1`. The width of the image to output. If there are not enough samples to fill the image, the remaining pixels will be left black. If there are too many samples, the excess samples will be discarded. Missing dimensions will be extrapolated from the available samples and dimensions.
   * `height`: see width.
-  * outputType: Type: `string`. Default: `'jpeg'`. The type of image to output. Can be `'png'` or `'jpeg'`
+  * outputType: Type: `string`. Default: `'jpg'`. The type of image to output. Can be `'png'` or `'jpg'`
 
 ## License
 
