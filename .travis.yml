@@ -1,0 +1,19 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - "node"
+jobs:
+  include:
+    - stage: coverage
+      node_js: "node"
+      script:
+        - npm run test:coverage
+    - stage: lint
+      node_js: "8"
+      script:
+        - npm run lint:prettier
+        - npm run lint:js
