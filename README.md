@@ -40,24 +40,49 @@ toWav(imageBuffer).then(wavBuffer => {
 
 ## API
 
-### toWav(image, [options])
+<dl>
+<dt><a href="#toWav">toWav(imageBuffer, [options])</a> ⇒ <code>Promise</code></dt>
+<dd><p>Converts an image to a wavefile</p>
+</dd>
+<dt><a href="#toImage">toImage(wavBuffer, [options])</a> ⇒ <code>Promise</code></dt>
+<dd><p>Converts a wavefile to an image</p>
+</dd>
+</dl>
 
-Returns a `Promise<Buffer>` for a 24-bit, mono `.wav` file.
+<a name="toWav"></a>
 
-* `image`: Type: `Buffer`. Expects the `Buffer` to be a `.jpg` image by default (can be changed by setting `options.inputType`).
-* `options`: Type: `Object`
-  * `inputType`: Type: `string`. Default: `'image/jpeg'`. MIME type of the input image buffer. Only `'image/png'` and `'image/jpeg'` are supported. Any `.png` transparency information will be discarded.
-  * `sampleRate`: Type: `number`. Default: `44100`. The sample rate of the output `.wav`.
+## toWav(imageBuffer, [options]) ⇒ <code>Promise</code>
+Converts an image to a wavefile
 
-### toImage(sound, [options])
+**Kind**: global function
+**Returns**: <code>Promise</code> - Resolves to a wav buffer
 
-Returns a `Promise<Buffer>` for a 24-bit `.jpg` file.
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| imageBuffer | <code>Buffer</code> |  | Buffer of the image to convert |
+| [options] | <code>object</code> |  | Configuration options |
+| [options.inputType] | <code>string</code> | <code>&quot;image/jpeg&quot;</code> | The mime-type of the imagebuffer |
+| [options.sampleRate] | <code>number</code> | <code>44100</code> | The sample rate of the output wavefile |
 
-* `sound`: Type: `Buffer`. Expects a `Buffer` of a 24-bit, mono `.wav` file.
-* `options`: Type: `Object`
-  * `width`: Type: `number`. Minimum: `1`. The width of the image to output. If there are not enough samples to fill the image, the remaining pixels will be left black. If there are too many samples, the excess samples will be discarded. Missing dimensions will be extrapolated from the available samples and dimensions.
-  * `height`: see width.
-  * outputType: Type: `string`. Default: `'jpg'`. The type of image to output. Can be `'png'` or `'jpg'`
+<a name="toImage"></a>
+
+## toImage(wavBuffer, [options]) ⇒ <code>Promise</code>
+Converts a wavefile to an image
+
+**Kind**: global function
+**Returns**: <code>Promise</code> - Resolves to a wav buffer
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| wavBuffer | <code>Buffer</code> |  | Buffer of the wavefile to convert, shouold be 24-bit and mono |
+| [options] | <code>object</code> |  | Configuration options |
+| [options.outputType] | <code>string</code> | <code>&quot;jpg&quot;</code> | The type of Buffer to output |
+| [options.width] | <code>number</code> |  | The (positive) width of the output image |
+| [options.height] | <code>number</code> |  | The (positive) height of the output image |
+
+## Contributing
+
+Generate these docs with `npx jsdoc-to-markdown`
 
 ## License
 
