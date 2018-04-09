@@ -2,5 +2,8 @@
   "extends": ["airbnb-base", "prettier"],
   "env": {
     "node": true
+  },
+  "rules": {
+    "valid-jsdoc": 2
   }
 }
