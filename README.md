@@ -1,12 +1,10 @@
-# toepler
+# synesthesia
 
-[![npm version][version-badge]][version-url]
 [![build status][build-badge]][build-url]
 [![coverage status][coverage-badge]][coverage-url]
 [![greenkeeper][greenkeeper-badge]][greenkeeper-url]
-[![downloads][downloads-badge]][downloads-url]
 
-> convert images to audio and vice versa
+> convert images, audio and text into eachother
 
 ## Usage
 
@@ -15,11 +13,11 @@
 ```javascript
 const fs = require('fs');
 const path = require('path');
-const { toImage } = require('toepler');
+const { wavToImage } = require('synesthesia');
 
 const wavBuffer = fs.readFileSync(path.join(__dirname, 'input.wav'));
 
-toImage(wavBuffer).then(imageBuffer => {
+wavToImage(wavBuffer).then(imageBuffer => {
   fs.writeFileSync(path.join(__dirname, 'output.jpg'), imageBuffer);
 });
 ```
@@ -29,11 +27,11 @@ toImage(wavBuffer).then(imageBuffer => {
 ```javascript
 const fs = require('fs');
 const path = require('path');
-const { toWav } = require('toepler');
+const { imageToWav } = require('synesthesia');
 
 const imageBuffer = fs.readFileSync(path.join(__dirname, 'input.jpg'));
 
-toWav(imageBuffer).then(wavBuffer => {
+imageToWav(imageBuffer).then(wavBuffer => {
   fs.writeFileSync(path.join(__dirname, 'output.wav'), wavBuffer);
 });
 ```
@@ -41,17 +39,17 @@ toWav(imageBuffer).then(wavBuffer => {
 ## API
 
 <dl>
-<dt><a href="#toWav">toWav(imageBuffer, [options])</a> ⇒ <code>Promise</code></dt>
+<dt><a href="#imageToWav">imageToWav(imageBuffer, [options])</a> ⇒ <code>Promise</code></dt>
 <dd><p>Converts an image to a wavefile</p>
 </dd>
-<dt><a href="#toImage">toImage(wavBuffer, [options])</a> ⇒ <code>Promise</code></dt>
+<dt><a href="#wavToImage">wavToImage(wavBuffer, [options])</a> ⇒ <code>Promise</code></dt>
 <dd><p>Converts a wavefile to an image</p>
 </dd>
 </dl>
 
-<a name="toWav"></a>
+<a name="imageToWav"></a>
 
-## toWav(imageBuffer, [options]) ⇒ <code>Promise</code>
+## imageToWav(imageBuffer, [options]) ⇒ <code>Promise</code>
 Converts an image to a wavefile
 
 **Kind**: global function
@@ -64,9 +62,9 @@ Converts an image to a wavefile
 | [options.inputType] | <code>string</code> | <code>&quot;image/jpeg&quot;</code> | The mime-type of the imagebuffer |
 | [options.sampleRate] | <code>number</code> | <code>44100</code> | The sample rate of the output wavefile |
 
-<a name="toImage"></a>
+<a name="wavToImage"></a>
 
-## toImage(wavBuffer, [options]) ⇒ <code>Promise</code>
+## wavToImage(wavBuffer, [options]) ⇒ <code>Promise</code>
 Converts a wavefile to an image
 
 **Kind**: global function
@@ -88,13 +86,9 @@ Generate these docs with `npx jsdoc-to-markdown`
 
 [MIT](http://ismay.mit-license.org/)
 
-[build-badge]: https://travis-ci.org/ismay/toepler.svg?branch=master
-[build-url]: https://travis-ci.org/ismay/toepler
-[greenkeeper-badge]: https://badges.greenkeeper.io/ismay/toepler.svg
+[build-badge]: https://travis-ci.org/ismay/synesthesia.svg?branch=master
+[build-url]: https://travis-ci.org/ismay/synesthesia
+[greenkeeper-badge]: https://badges.greenkeeper.io/ismay/synesthesia.svg
 [greenkeeper-url]: https://greenkeeper.io/
-[coverage-badge]: https://coveralls.io/repos/github/ismay/toepler/badge.svg?branch=master
-[coverage-url]: https://coveralls.io/github/ismay/toepler?branch=master
-[downloads-badge]: https://img.shields.io/npm/dm/toepler.svg
-[downloads-url]: https://www.npmjs.com/package/toepler
-[version-badge]: https://img.shields.io/npm/v/toepler.svg
-[version-url]: https://www.npmjs.com/package/toepler
+[coverage-badge]: https://coveralls.io/repos/github/ismay/synesthesia/badge.svg?branch=master
+[coverage-url]: https://coveralls.io/github/ismay/synesthesia?branch=master

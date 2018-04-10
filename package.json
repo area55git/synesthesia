@@ -1,18 +1,10 @@
 {
-  "name": "toepler",
+  "name": "synesthesia",
   "version": "0.1.0",
-  "description": "convert images to audio and vice versa",
-  "homepage": "https://github.com/ismay/toepler#readme",
+  "description": "convert images, audio and text into eachother",
   "author": "ismay",
   "license": "MIT",
   "main": "lib/convert.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ismay/toepler.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ismay/toepler/issues"
-  },
   "greenkeeper": {
     "ignore": [
       "eslint",
