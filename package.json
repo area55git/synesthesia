@@ -1,7 +1,7 @@
 {
   "name": "synesthesia",
   "version": "0.1.0",
-  "description": "convert images, audio and text into eachother",
+  "description": "convert images, audio and text into each other",
   "author": "ismay",
   "license": "MIT",
   "main": "lib/convert.js",
