@@ -1,21 +1,12 @@
 language: node_js
+node_js:
+  - "9"
 cache:
   directories:
     - node_modules
 notifications:
   email: false
-jobs:
-  include:
-    - stage: test
-      node_js: "9"
-      script:
-        - npm test
-    - stage: coverage
-      node_js: "9"
-      script:
-        - npm run test:coverage
-    - stage: lint
-      node_js: "9"
-      script:
-        - npm run lint:prettier
-        - npm run lint:js
+script:
+  - npm run test:coverage
+  - npm run lint:prettier
+  - npm run lint:js
