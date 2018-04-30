@@ -23,7 +23,7 @@
     "get-pixels": "^3.3.0",
     "save-pixels": "^2.3.4",
     "stream-to-promise": "^2.2.0",
-    "wavefile": "^4.0.0",
+    "wavefile": "^5.0.0",
     "zeros": "^1.0.0"
   },
   "devDependencies": {
