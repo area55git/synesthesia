@@ -1,10 +1,10 @@
 {
-  "name": "synesthesia",
+  "name": "@ismay/synesthesia",
   "version": "0.1.0",
   "description": "convert images, audio and text into each other",
   "author": "ismay",
   "license": "MIT",
-  "main": "lib/convert.js",
+  "main": "lib/index.js",
   "greenkeeper": {
     "ignore": [
       "eslint",
@@ -19,11 +19,12 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "debug": "^3.1.0",
     "get-pixels": "^3.3.0",
+    "int-bits": "^1.0.0",
+    "jsunicode": "^1.0.3",
     "save-pixels": "^2.3.4",
     "stream-to-promise": "^2.2.0",
-    "wavefile": "^5.0.0",
+    "wavefile": "^5.0.3",
     "zeros": "^1.0.0"
   },
   "devDependencies": {

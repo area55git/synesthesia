@@ -9,3 +9,4 @@ package-lock.json
 
 # Test build results
 test/fixtures/*/output
+coverage

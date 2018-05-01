@@ -6,35 +6,7 @@
 
 > convert images, audio and text into each other
 
-## Usage
-
-#### Audio to image
-
-```javascript
-const fs = require('fs');
-const path = require('path');
-const { wavToImage } = require('synesthesia');
-
-const wavBuffer = fs.readFileSync(path.join(__dirname, 'input.wav'));
-
-wavToImage(wavBuffer).then(imageBuffer => {
-  fs.writeFileSync(path.join(__dirname, 'output.jpg'), imageBuffer);
-});
-```
-
-#### Image to audio
-
-```javascript
-const fs = require('fs');
-const path = require('path');
-const { imageToWav } = require('synesthesia');
-
-const imageBuffer = fs.readFileSync(path.join(__dirname, 'input.jpg'));
-
-imageToWav(imageBuffer).then(wavBuffer => {
-  fs.writeFileSync(path.join(__dirname, 'output.wav'), wavBuffer);
-});
-```
+Allows you to convert images, audio and text to Float32Arrays and Float32Arrays to images, audio and text.
 
 ## License
 
