@@ -20,11 +20,10 @@
   },
   "dependencies": {
     "get-pixels": "^3.3.0",
-    "int-bits": "^1.0.0",
-    "jsunicode": "^1.0.3",
+    "iconv-lite": "^0.4.21",
     "save-pixels": "^2.3.4",
     "stream-to-promise": "^2.2.0",
-    "wavefile": "^5.0.3",
+    "wavefile": "^6.1.0",
     "zeros": "^1.0.0"
   },
   "devDependencies": {
