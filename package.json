@@ -21,6 +21,7 @@
   "dependencies": {
     "get-pixels": "^3.3.0",
     "iconv-lite": "^0.4.21",
+    "png-has-alpha": "^1.0.0",
     "save-pixels": "^2.3.4",
     "stream-to-promise": "^2.2.0",
     "wavefile": "^6.1.0",

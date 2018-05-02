@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`throws an error for pngs without transparency 1`] = `"Input png is missing a transparency channel"`;
+
 exports[`throws an error for wavs which aren't mono 1`] = `"Wav file should be mono, but has 2 channels"`;
 
 exports[`throws an error for wavs with invalid bit depths 1`] = `"Wav file should be 32 bit, but is 24 bit"`;
