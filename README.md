@@ -6,7 +6,7 @@
 
 > convert images, audio and text into each other
 
-Allows you to convert images, audio and text to Float32Arrays and Float32Arrays to images, audio and text.
+Allows you to convert images, audio and text to a Uint32Array and a Uint32Array to images, audio and text.
 
 ## License
 
