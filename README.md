@@ -1,4 +1,4 @@
-# synesthesia
+<p align="center"><img src="https://s14.postimg.cc/r0nfu589d/LOGO_PROPOSAL_FOR_SYNESTHESIA_17.png"></p>
 
 [![build status][build-badge]][build-url]
 [![coverage status][coverage-badge]][coverage-url]
